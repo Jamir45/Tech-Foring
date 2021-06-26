@@ -1,0 +1,38 @@
+.ResourceSection{
+   .col-md-4{
+      padding: 0px 25px 25px 25px;
+      h3{
+         text-align: center;
+         font-size: 25px;
+      }
+      h3::after {
+         content: "";
+         width: 180px;
+         height: 3px;
+         margin: auto;
+         display: block;
+         border-radius: 10px;
+         margin-top: 7px;
+         margin-bottom: 15px;
+         background-color: $commonColor1;
+      }
+      .resource{
+         background-color: #f4f4f4;
+         border-radius: 5px;
+         img{
+            width: 100% !important;
+            height: auto;
+         }
+         p{
+            padding: 15px 15px 0px 15px;
+            font-weight: 500;
+         }
+         button {
+            @include scanButton;
+            background-color: $commonColor1;
+            margin: 10px 20px 20px 20px;
+            padding: 6px 17px;
+         }
+      }
+   }
+}

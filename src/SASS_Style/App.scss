@@ -1,0 +1,37 @@
+// import variables and mixin
+@import './mixin';
+@import './variable';
+
+
+// import header component styles
+@import '../Component/Header/Header';
+
+// import banner component styles
+@import '../Component/Banner/Banner';
+
+// import common component styles
+@import '../Component/Common/Common';
+
+// import companies component styles
+@import '../Component/Companies/Companies';
+
+// import full scan component styles
+@import '../Component/FullScan/FullScan';
+
+// import feature and commitment component styles
+@import '../Component/FeatureCommitment/FeatureCommitment';
+
+// import testimonials component styles
+@import '../Component/Testimonials/Testimonials';
+
+// import pricing component styles
+@import '../Component/Pricing/Pricing';
+
+// import mid banner component styles
+@import '../Component/MidBanner/MidBanner';
+
+// import resource component styles
+@import '../Component/Resource/Resource';
+
+// import footer component styles
+@import '../Component/Footer/Footer';

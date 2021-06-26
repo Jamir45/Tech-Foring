@@ -1,0 +1,42 @@
+@mixin bgImg {
+   height: auto;
+   background-image: url(../../Resource/Images/header.jpg);
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+
+.appBanner {
+   @include bgImg;
+   background-position: center;
+   margin-bottom: 20px;
+   .container{
+      padding-top: 200px;
+      padding-bottom: 80px;
+      h1 {font-size: 40px;}
+      .row{
+         text-align: center;
+         color: white;
+         input {
+            margin: 20px 0px;
+            border-radius: 0;
+            padding: 10px;
+            padding-left: 50px;
+         }
+         button{
+            @include scanButton;
+            background-color: $commonColor2;
+         }
+      }
+   }
+}
+
+@media only screen and (max-width: 990px) {
+   .appBanner {
+      @include bgImg;
+      background-position: 70% !important;
+      .container{
+         padding-top: 190px;
+         padding-bottom: 50px;
+      }
+   }
+}

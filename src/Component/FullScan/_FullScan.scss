@@ -1,0 +1,40 @@
+.fullScan{
+   padding:30px 0px;
+   text-align: center;
+   button{
+      @include scanButton;
+      background-color: $commonColor1;
+      margin: 20px 0px;;
+      margin-bottom: 50px;
+   }
+   .col-md-5 {
+      text-align: left;
+      h4 {font-weight: bold}
+      h6{
+         font-size: 18px;
+         font-weight: 500;
+         margin-top: 28px;
+         margin-bottom: 18px;
+      }
+      ul {
+         list-style: none;
+         margin-left: 15px;
+         li {
+            line-height: 23px;
+            display: flex;
+            padding: 12px 0px;
+            font-weight: 500;
+         }
+         li::before {
+            content: "\2022";
+            color: $commonColor1;
+            font-weight: bold;
+            font-size: 55px;
+            display: inline-block;
+            width: 0.7em;
+            margin-left: -1em;
+            margin-top: -7px;
+         }
+      }
+   }
+}

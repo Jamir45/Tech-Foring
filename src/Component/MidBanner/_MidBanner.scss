@@ -1,0 +1,50 @@
+
+.midBanner {
+   background-color: $commonColor1;
+   padding: 30px 0px;
+   margin: 70px 0px 40px 0px;
+   .row {
+      display: flex;
+      align-items: center;
+      .image {
+         padding: 0px 165px;
+      }
+      .details{
+         text-align: center;
+         color: white;
+         h2::before {
+            content: "";
+            width: 100px;
+            height: 4px;
+            margin: auto;
+            display: block;
+            border-radius: 10px;
+            margin-top: 7px;
+            margin-bottom: 10px;
+            background-color: white;
+         }
+         button{
+            @include scanButton;
+            color: black !important;
+            padding: 10px 40px;
+         }
+      }
+   }
+}
+
+@media only screen and (max-width:770px) {
+   .midBanner {
+      background-color: $commonColor1;
+      padding: 40px 0px;
+      margin: 40px 0px;
+      .row {
+         .image {
+            padding: 0px 80px;
+            padding-top: 40px;
+         }
+         .details{
+            padding: 40px;
+         }
+      }
+   }
+}

@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Benne&display=swap');
+
+@mixin headerCommon {
+   .appLogo{
+      text-decoration: none;
+      margin: -6px 0px;
+      padding-top: 5px;
+      span {
+         color: $commonColor1;
+         font-family: 'Lobster', cursive;
+         font-size: 22px;
+      }
+      h5 {
+         margin-top: -15px;
+         font-family: 'Benne', serif;
+         font-size: 38px;
+         color: $commonColor2;
+         span {font-size: 38px;}
+      }
+   }
+   ul {
+      li {
+         padding: 7px 25px;
+         transition: all 0.3s;
+         a {
+            text-decoration: none;
+            color: black;
+            font-weight: 400;
+            transition: all 0.3s;
+         }
+      }
+      li:hover {
+         border-radius: 5px;
+         background-color: rgb(235, 235, 235);
+      }
+   }
+}
+
+.applicationHeader {
+   margin-bottom: 80px !important;
+   .bg-light{
+      transition: all 0.5s;
+      padding: 0px 0px !important;
+      @include headerCommon;
+   }
+   .bg-white{
+      transition: all 0.5s;
+      padding: 6px 0px !important;
+      @include headerCommon;
+   }
+}
+
+@media only screen and (max-width: 540px) {
+   .applicationHeader{
+      .appLogo{
+         span {
+            font-size: 20px !important;
+         }
+         h5 {
+            font-size: 35px !important;
+            color: $commonColor2;
+            span {font-size: 35px !important;}
+         }
+      }
+   }
+}

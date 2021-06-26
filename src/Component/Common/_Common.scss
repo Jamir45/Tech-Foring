@@ -1,0 +1,18 @@
+.heading{
+   text-align: center;
+   padding: 20px 0px;
+   h2 {
+      font-size: 30px;
+      margin-top: 10px;
+   }
+}
+.heading::before {
+   content: "";
+   width: 100px;
+   height: 4px;
+   margin: auto;
+   display: block;
+   border-radius: 10px;
+   margin-top: 7px;
+   background-color: $commonColor1;
+}

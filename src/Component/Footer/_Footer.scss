@@ -1,0 +1,51 @@
+.footerSection{
+   background-color: $commonColor1;
+   padding: 30px 0px;
+   margin-top: 100px;
+   .col-md-3 {
+      color: white;
+      padding: 10px 25px;
+      h6 {
+         border-bottom: 1px solid white;
+         padding-bottom: 5px;
+      }
+      ul{
+         list-style: none;
+         padding: 0;
+         li{
+            padding: 10px 0px;
+         }
+      }
+   }
+}
+
+#collapseOne, #collapseTwo, #collapseThree, #collapseFour {
+   background-color: #182f59;
+}
+.accordion-button {
+   position: relative;
+   display: flex;
+   align-items: center;
+   width: 100%;
+   padding: 1rem 1.25rem;
+   font-size: 1rem;
+   color: white !important;
+   text-align: left;
+   background-color: #182f59 !important;
+   border-bottom: 1px solid white;
+   border-radius: 0;
+   overflow-anchor: none;
+   transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out,border-radius .15s ease;
+}
+.accordion-item {
+   background-color: #fff;
+   border: none;
+}
+.accordion-body ul {
+   color: white;
+   list-style: none;
+   padding: 0;
+   li{
+      padding: 10px 0px;
+   }
+}
